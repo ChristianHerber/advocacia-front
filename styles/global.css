@@ -1,0 +1,123 @@
+@font-face {
+font-family: 'Pacifico';
+font-style: normal;
+font-weight: 400;
+src: local('Pacifico Regular'), local('Pacifico-Regular'), url(https://fonts.gstatic.com/s/pacifico/v12/FwZY7-Qmy14u9lezJ-6H6MmBp0u-.woff2) format('woff2');
+font-display: swap;
+}
+:root {
+--accent-color: #D3B574;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+font-family: 'Roboto', sans-serif;
+}
+header {
+border-top: 4px solid var(--accent-color);
+}
+.navbar-light .navbar-nav .nav-link {
+color: #000;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+background: var(--accent-color);
+}
+.navbar-brand img {
+width: 150px;
+height: 121px;
+}
+.block {
+    padding-top: 90px;
+    padding-bottom: 90px;
+    background-color: #000;
+    border-bottom: 4px solid #f4f4f4;
+}
+.block-1 {
+    background-image: url(/justica.cega.webp);
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-size: contain;
+}
+.block-2 {
+background: #fff;
+}
+.block-2 .block-title {
+color: #000!important;
+border-bottom: 2px dotted var(--accent-color);
+}
+.block-title {
+    margin-bottom: 30px;
+    line-height: 42px;
+    /* font-size: */
+    text-transform: uppercase;
+    color: var(--accent-color);
+}
+.block-title h2 {
+text-transform: none;
+}
+.block-title h3,
+.block-title h4 {
+font-size: calc(1.325rem + .9vw);
+}
+.block-description {
+    font-size: 20px;
+}
+.photo-profile {
+    border-radius: 20px;
+}
+.text-purple {
+    color: #962FBF;
+}
+.btn-warning-muted {
+    color: #000;
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+.text-warning-mutted {
+color: var(--accent-color);
+}
+.map iframe {
+    width: 100%;
+}
+.copyright,
+.navbar-light .navbar-toggler {
+background: var(--accent-color);
+}
+.whatsapp-contact {
+position: fixed;
+right: 15px;
+bottom: 20px;
+padding: 17px;
+background: rgba(39,208,69,0.8);
+border-radius: 50%;
+}
+.whatsapp-contact:hover {
+    background: rgba(39,208,69,1);
+}
+@media (max-width: 767px) {
+    .navbar-nav {
+        text-align: center;
+    }
+    .block-1 article {
+    background: rgba(0,0,0,0.6);
+    backdrop-filter: blur(6px);
+    border-radius: 5px;
+    padding: 15px;
+    }
+    .block-3 article:last-child {
+    margin-top: 65px;
+    }
+    .block-4 {
+    text-align: left;
+    padding-top: 10px;
+    }
+    .ico-mobile {
+    color: var(--accent-color)!important;
+    }
+    .block-4 p:last-child {
+    display: none;
+    }
+}

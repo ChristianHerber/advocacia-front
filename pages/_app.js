@@ -1,4 +1,5 @@
 import { createGlobalStyle, ThemeProvider } from 'styled-components'
+import "../styles/global.css"
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -7,7 +8,6 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
 `
-
 const theme = {
   colors: {
     primary: '#0070f3',
